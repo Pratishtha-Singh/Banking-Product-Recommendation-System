@@ -35,7 +35,7 @@ Within the Drive folder:
 
 ## Pipeline
 
-![Pipeline Architecture](/Pipeline Architecture.jpg)
+[Pipeline Architecture](Pipeline Architecture.jpg)
 
 1. **Data Ingestion & Cleaning**  
    - Load customer profile and transaction data  
