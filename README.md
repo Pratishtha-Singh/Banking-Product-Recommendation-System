@@ -85,7 +85,6 @@ Within the Drive folder:
   - Most common: General Purpose Card (24.9%); Standard Card (1.8%)
 
 ---
-
 ## Project Structure
 
 1. **Model Development** (`notebooks_models_development/`)  
@@ -122,31 +121,30 @@ Within the Drive folder:
 
 2. **User Interface** (`user-interface-streamlit/`)
 
-This directory contains the Streamlit-based web application for end-users to interact with the recommendation system.
+   This directory contains the Streamlit-based web application for end-users to interact with the recommendation system.
 
-```text
-user-interface-streamlit/
-├── app/                                           # Main application code
-├── main.py                                    # Streamlit entrypoint
-├── assets/                                    # Static assets (images, html)
-│   ├── vertical_pipeline.jpg                  # Pipeline visualization
-│   └── pca_4d_interactive.html                # Interactive PCA viz
-├── utils/                                     # Helper modules
-│   ├── product_category_recommender.py        # Category prediction logic
-│   ├── loan_product_recommender.py            # Loan recommendation logic
-│   ├── feature_engineering.py                 # Shared feature utilities
-│   ├── credit_card_recommender.py             # Credit-card subtype logic
-│   └── customer_segmenter.py                  # Customer segmentation logic
-├── data/                                      # App data inputs
-│   ├── demo_data/                             # Sample/demo CSVs
-│   └── background_data/                       # Preprocessed data for runtime
-├── models/                                    # Trained model artifacts
-│   ├── primary_model/                         # XGBoost product category model
-│   ├── loan_model/                            # Loan recommendation model
-│   ├── customer_segment_model/                # KMeans segmentation model
-│   └── credit_card_model/                     # KMeans credit-card subtype model
-└── requirements.txt                           # App-specific Python dependencies
-
+   ```text
+   user-interface-streamlit/
+   ├── app/                                           # Main application code
+   ├── main.py                                    # Streamlit entrypoint
+   ├── assets/                                    # Static assets (images, html)
+   │   ├── vertical_pipeline.jpg                  # Pipeline visualization
+   │   └── pca_4d_interactive.html                # Interactive PCA viz
+   ├── utils/                                     # Helper modules
+   │   ├── product_category_recommender.py        # Category prediction logic
+   │   ├── loan_product_recommender.py            # Loan recommendation logic
+   │   ├── feature_engineering.py                 # Shared feature utilities
+   │   ├── credit_card_recommender.py             # Credit-card subtype logic
+   │   └── customer_segmenter.py                  # Customer segmentation logic
+   ├── data/                                      # App data inputs
+   │   ├── demo_data/                             # Sample/demo CSVs
+   │   └── background_data/                       # Preprocessed data for runtime
+   ├── models/                                    # Trained model artifacts
+   │   ├── primary_model/                         # XGBoost product category model
+   │   ├── loan_model/                            # Loan recommendation model
+   │   ├── customer_segment_model/                # KMeans segmentation model
+   │   └── credit_card_model/                     # KMeans credit-card subtype model
+   └── requirements.txt                           # App-specific Python dependencies
 
 ---
 
@@ -157,8 +155,6 @@ A **Streamlit** demo app showcases the full pipeline:
 - **Tabs:** Introduction, Architecture, Interactive Demo, Metrics Dashboards  
 - **Interactive Workflow:** Select customer → view profile & transactions → step through category prediction, segmentation, and product recommendations  
 - **Visualizations:** RFM score charts, cluster assignments, recommendation rationale  
-
----
 
 ## Dependencies
 
@@ -172,4 +168,6 @@ A **Streamlit** demo app showcases the full pipeline:
 - seaborn  
 - streamlit  
 - jupyter  
+
+
 
